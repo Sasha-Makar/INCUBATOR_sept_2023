@@ -72,9 +72,10 @@ console.log('-------=task#4=------');
 let name = prompt('enter your name...','Okten');
 let middle = prompt('enter your middle name...','Is');
 let last = prompt('enter your last name...','Cool');
+let year = +prompt('enter your age...','1000');
 
-let fullName = `${name} ${middle} ${last}`;
+let fullName = `${name} ${middle} ${last} and I am ${year} year old`;
 console.log(fullName);
-alert(`${name}\n${middle}\n${last}`);
+alert(`${name}\n${middle}\n${last}\n${year} years old`);
 
 console.log('--------------------END----------------------------');
