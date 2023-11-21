@@ -1,0 +1,24 @@
+@media screen and (min-width: 100px) and (max-width: 480px) {
+    .container {
+        width: 20vw;
+        height: 40vh;
+    }
+    h2 {
+        font-size: 10px;
+    }
+    .main {
+        width: 18vw;
+        height: 37vh;
+    }
+    header {
+        height: 5vh;
+    }
+    .box_B {
+        height: 24vh;
+    }
+    .box_C {
+        height: 5vh;
+        width: 18vw;
+    }
+
+}

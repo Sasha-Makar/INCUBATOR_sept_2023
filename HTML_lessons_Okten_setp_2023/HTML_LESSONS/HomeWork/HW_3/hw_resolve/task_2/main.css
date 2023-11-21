@@ -1,0 +1,46 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    background-color: darkred;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    background-color: greenyellow;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    width: 100vw;
+    height: 100vh;
+    background-color: cornflowerblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header, .main, .footer {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+}
+img {
+    margin-left: 20vw;
+}
+h2 {
+    text-align: center;
+}

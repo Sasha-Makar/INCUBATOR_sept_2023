@@ -1,0 +1,62 @@
+body {
+    background-color: darkcyan;
+    font-family: 'Raleway', sans-serif;
+}
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.form {
+    width: 40vw;
+    height: 70vh;
+    /*background-color: #817B7B;*/
+
+}
+header {
+    height: 20vh;
+    background-color: #D9D9D9;
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header p {
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.main_content {
+    height: 50vh;
+    background-color: white;
+    border-radius: 0 0 10px 10px;
+}
+.main_content {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+form {
+    display: flex;
+    flex-direction: column;
+}
+input[type=text], input[type=password]{
+    width: 30vw;
+    height: 5vh;
+    margin-top: 15px;
+}
+.button {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+button {
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    background-color: #D9D9D9;
+}

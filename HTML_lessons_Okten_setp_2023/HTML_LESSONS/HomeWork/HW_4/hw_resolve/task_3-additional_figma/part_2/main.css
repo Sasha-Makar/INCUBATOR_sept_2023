@@ -1,0 +1,57 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+h3 {
+    margin: 0;
+}
+header {
+    width: 70vw;
+    height: 20vh;
+    background: #8D8484;
+}
+.main {
+    display: flex;
+}
+.content_1,
+.content_2,
+.content_3 {
+    width: 50vw;
+    height: 20vh;
+}
+.content_1 {
+    background: #776969;
+}
+.content_2 {
+    background: #643030;
+}
+.content_3 {
+    background: #441818;
+}
+.spam_1, .spam_2 {
+    width: 20vw;
+    height: 30vh;
+}
+.spam_1 {
+    background: #937575;
+}
+.spam_2 {
+    background: #644C4C;
+}
+footer {
+    width: 70vw;
+    height: 20vh;
+    background: #BDBDBD;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main h3 {
+    color: white;
+}

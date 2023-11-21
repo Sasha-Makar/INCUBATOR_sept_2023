@@ -1,0 +1,75 @@
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.main {
+    width: 30vw;
+    height: 70vh;
+    /*border: 1px solid black;*/
+}
+.top_form {
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.txt1 {
+    width: 30%;
+    padding: 10px 30px;
+}
+.txt2 {
+    width: 40%;
+    padding: 10px 30px;
+}
+.email {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.email input {
+    width: 100%;
+    height: 30px;
+}
+.password {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+.password input {
+    width: 100%;
+    height: 30px;
+}
+.button_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 50px;
+}
+p {
+    text-align: justify;
+}
+.grey {
+    color: #A59D9D;
+}
+button {
+    width: 100%;
+    height: fit-content;
+    background-color: gold;
+    margin-top: 50px;
+    transition: 50ms;
+}
+button:hover {
+    background-color: black;
+    color: white;
+    transition: 100ms;
+}
+button h2 {
+    margin: 3px;
+}

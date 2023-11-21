@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>part_2</title>
+    <style>
+        ul {
+            list-style-type: none;
+        }
+
+        ol > li::after {
+            content: '!!!';
+            color: blue;
+            font-size: 20px;
+        }
+
+        ul > li::before {
+            content: ' ';
+            background-image: url("https://upload.wikimedia.org/wikipedia/ru/thumb/9/96/CGIYoda.jpg/200px-CGIYoda.jpg");
+            background-size: cover;
+            display: inline-block;
+            width: 15px;
+            height: 15px;
+            margin-right: 15px;
+        }
+
+        ol > li::first-letter {
+            color: darkcyan;
+        }
+
+        p::first-letter {
+            color: red;
+            font-size: 22px;
+        }
+        p::first-line {
+            color: darkcyan;
+        }
+    </style>
+</head>
+<body>
+
+
+<!--ol>li*5>lorem3-->
+
+<ol>
+    <li>Lorem ipsum dolor.</li>
+    <li>Consequuntur, laboriosam vel!</li>
+    <li>Asperiores explicabo, labore.</li>
+    <li>Debitis, nulla tempora!</li>
+    <li>Error, nulla, tempora.</li>
+</ol>
+<ul>
+    <li>Lorem ipsum.</li>
+    <li>Corporis, laboriosam?</li>
+    <li>Enim, nemo!</li>
+    <li>Dignissimos, harum.</li>
+    <li>Minima, provident.</li>
+</ul>
+
+<p>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet atque, blanditiis dolore doloribus dolorum ducimus
+    eligendi eum ex in, laborum magnam nam neque nostrum quaerat quasi reiciendis repellat soluta tenetur. Adipisci
+    animi commodi culpa dolor dolores eius enim facere fuga nisi, recusandae ullam veniam. Ad amet dignissimos ducimus
+    est in maiores perspiciatis reiciendis reprehenderit sapiente, voluptate. Architecto autem cupiditate facere
+    nesciunt odit quibusdam, quod suscipit veniam vero! Amet assumenda blanditiis deleniti dolor doloribus eligendi
+    exercitationem, id illum ipsam itaque maxime odio pariatur perferendis quo quos repellat saepe sequi tempore ut
+    vero. Dicta exercitationem quo repellat ullam voluptatem. Cumque, id, nihil!
+</p>
+</body>
+</html>

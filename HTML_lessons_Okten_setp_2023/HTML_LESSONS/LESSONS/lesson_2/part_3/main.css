@@ -1,0 +1,29 @@
+
+div {
+    width: 200px;
+    height: 200px;
+    background-color: cornflowerblue;
+    /*margin-top: 10px;*/
+    border-radius: 50%;
+    border: 10px solid cornflowerblue;
+}
+.red {
+    background-color: red;
+}
+.green {
+    background-color: green;
+}
+.yellow {
+    background-color: yellow;
+}
+/*#redBox {*/
+/*    background-color: darkviolet;*/
+/*}*/
+/*.green, .yellow {*/
+/*    opacity: 0.5;*/
+/*}*/
+
+.main {
+    width: 100%;
+    display: flex;
+}

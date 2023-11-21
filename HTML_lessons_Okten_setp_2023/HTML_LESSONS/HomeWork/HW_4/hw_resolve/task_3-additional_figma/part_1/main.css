@@ -1,0 +1,50 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    width: 50vw;
+    height: 20vh;
+    background: #D9D9D9;
+}
+.main {
+    display: flex;
+}
+.main h3 {
+    margin: 0;
+}
+.news {
+    width: 10vw;
+    height: 40vh;
+    background: #817C7C;
+}
+.content_1, .content_2 {
+    width: 30vw;
+    height: 20vh;
+}
+.content_1 {
+    background: #ABA8A8;
+}
+.content_2 {
+    background: #878484;
+}
+.sponsor {
+    width: 10vw;
+    height: 40vh;
+    background: #B7AEAE;
+}
+footer {
+    width: 50vw;
+    height: 20vh;
+    background: #BDBDBD;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

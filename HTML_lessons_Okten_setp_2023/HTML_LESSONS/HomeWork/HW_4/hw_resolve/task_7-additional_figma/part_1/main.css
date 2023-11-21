@@ -1,0 +1,35 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+header {
+    background-color:  #D9D9D9;;
+    width: 75vw;
+    height: 15vh;
+}
+.container {
+    display: flex;
+}
+.box_1 {
+    width: 25vw;
+    height: 55vh;
+    background: #CCC;
+}
+.box_2 {
+    background: #848383;
+    width: 25vw;
+    height: 55vh;
+}
+.box_3 {
+    background: #656565;
+    width: 25vw;
+    height: 55vh;
+}
+footer {
+    width: 75vw;
+    height: 15vh;
+    background: #ACABAB;
+}

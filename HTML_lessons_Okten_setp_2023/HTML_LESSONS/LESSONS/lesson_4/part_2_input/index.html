@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lesson_4_part_2</title>
+    <style>
+        /*p {*/
+        /*    letter-spacing: 10px;*/
+        /*}*/
+        label {
+            display: block;
+            /*letter-spacing: 2px;*/
+            /*margin-left: 20px;*/
+            margin-top: 20px;
+        }
+        sup {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+
+<!--<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis, tempora?</p>-->
+
+
+<form>
+    <label for="name">Enter your name</label>
+    <input type="text" id="name" name="username" placeholder="enter name" required><sup>*</sup>
+
+    <label for="password">Enter your password</label>
+    <input type="password" id="password" name="password" placeholder="qwerty123" required><sup>*</sup>
+
+    <label for="email">Enter your name</label>
+    <input type="email" id="email" name="email">
+
+    <label for="age">Enter your name</label>
+    <input type="number" id="age" name="age" placeholder="enter age" max="100" min="18" required>
+
+    <label>Стать:</label>
+    <label> <input type="radio" name="gender" value="female">Woman</label>
+    <label> <input type="radio" name="gender" value="male">Man</label>
+
+
+    <label><input type="checkbox" name="newsletter"> Pidpysatys na nowyny </label>
+    <label><input type="checkbox" name="newsletter"> Pidpysatys na telegram </label>
+
+    <label>Country:</label>
+        <select>
+            <option value=" ">Select country</option>
+            <option value="ua">Ukraine</option>
+            <option value="ca">Canada</option>
+            <option value="usa">America</option>
+        </select>
+
+
+    <label for="fone">Phone</label>
+    <select id="fone">
+        <optgroup label="Aplle">
+            <option value="IPhoneX">IPhoneX</option>
+            <option value="IPhoneXR">IPhoneXR</option>
+            <option value="IPhoneXS">IPhoneXS</option>
+        </optgroup>
+        <optgroup label="Samsung">
+            <option value="Samsung13">Samsung13</option>
+            <option value="Samsung115">Samsung115</option>
+            <option value="SamsungXS">SamsungXS</option>
+        </optgroup>
+    </select>
+
+
+    <label> Enter TXT<br>
+        <textarea style="resize: none; text-overflow: ellipsis" cols="10" rows="5"></textarea>
+    </label>
+
+
+    <input type="reset" value="click">
+    <input type="submit" value="go to server">
+
+    <input type="color">
+    <input type="file">
+    <input type="date">
+    <input type="time">
+
+
+
+
+
+
+
+
+</form>
+
+
+
+
+
+
+
+</body>
+</html>

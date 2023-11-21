@@ -1,0 +1,42 @@
+@media screen and (min-width: 100px) and (max-width: 480px) {
+    .container {
+        width: 32vw;
+        height: 39vh;
+    }
+    h2 {
+        font-size: 10px;
+    }
+    .main {
+        width: 28vw;
+        height: 38vh;
+    }
+    header {
+        /*width: 27vw;*/
+        height: 5vh;
+        margin-top: 1vh;
+    }
+    .flex {
+        flex-direction: column;
+    }
+    .block_B {
+        height: 20vh;
+        width: 28vw;
+    }
+    .big_section {
+        margin-bottom: 1vh;
+    }
+    .small_section {
+        justify-content: space-around;
+    }
+    .block_C,.block_D,.block_E {
+        width: 5vw;
+        height: 3vh;
+        border-radius: 5px;
+    }
+    .block_F {
+        height: 5vh;
+        width: 28vw;
+        margin: 0;
+    }
+
+}

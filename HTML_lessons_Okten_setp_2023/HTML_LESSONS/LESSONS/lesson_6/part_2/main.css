@@ -1,0 +1,25 @@
+body {
+    margin: 0;
+}
+header,footer {
+    height: 20vh;
+    width: 100vw;
+    background-color: gray;
+}
+.flex {
+    display: flex;
+    /*flex-wrap: wrap;*/
+}
+.pink {
+    height: 60vh;
+    width: 20vw;
+    background-color: pink;
+}
+.green {
+    height: 60vh;
+    width: 60vw;
+    background-color: green;
+}
+.main {
+    display: none;
+}

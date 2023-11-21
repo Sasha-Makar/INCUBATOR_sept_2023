@@ -1,0 +1,59 @@
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+header {
+    width: 70vw;
+    height: 20vh;
+    background: #927D7D;
+}
+.main  {
+    display: flex;
+}
+aside {
+    width: 15vw;
+    height: 60vh;
+    background: #817C7C;
+}
+.top_box {
+    width: 40vw;
+    height: 10vh;
+    background: #CCBEBE;
+}
+.center_box {
+    display: flex;
+}
+.box_1 {
+    width: 10vw;
+    height: 40vh;
+    background: #473434;
+}
+.box_2 {
+    width: 20vw;
+    height: 40vh;
+    background: #A74848;
+}
+.box_3 {
+    width: 10vw;
+    height: 40vh;
+    background: #B7AEAE;
+}
+.bottom_box {
+    width: 40vw;
+    height: 10vh;
+    background: #CF6262;
+}
+.last_box {
+    width: 15vw;
+    height: 60vh;
+    background: #B7AEAE;
+}
+footer {
+    width: 70vw;
+    height: 20vh;
+    background: #BDBDBD;
+}
