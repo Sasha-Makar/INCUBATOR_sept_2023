@@ -314,16 +314,16 @@ console.log('--------------');
 // якщо значення змінної х являється falsy (хибноподібні, тобто приводиться до false)
 
 
-x = +prompt('enter value', '');
-
-if (!x){
-    x = 'default';
-    console.log(x);
-}else if (typeof x === "string" || typeof x === "number" || !!x){
-    console.log(x);
-}
-
-let z = true;
+// x = prompt('enter value', '');
+//
+// if (!x){
+//     x = 'default';
+//     console.log(x);
+// }else {
+//     console.log(x);          !!!!!!!!!!!!!!!!!!!!!!!!!!!!
+// }
+console.log('=======================================');
+let z = null;
 
 if (z === null || z === undefined || z === '' || z === null || z === NaN || z === 0) {
     z = 'default';
