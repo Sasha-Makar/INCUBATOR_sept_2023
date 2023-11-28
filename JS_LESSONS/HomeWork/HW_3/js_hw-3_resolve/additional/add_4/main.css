@@ -1,0 +1,20 @@
+body {
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.wrap {
+    margin-left: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.post-card {
+    width: 20%;
+    border: 1px solid deeppink;
+    margin: 10px;
+    text-align: justify;
+}
+.post-card h3 {
+    text-align: center;
+    color: #1777d0;
+}
