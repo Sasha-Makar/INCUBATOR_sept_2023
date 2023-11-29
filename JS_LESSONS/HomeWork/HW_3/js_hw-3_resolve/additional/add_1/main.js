@@ -358,31 +358,36 @@ document.write('<hr>');
 
 
 // стоврити масив книжок (назва, кількість сторінок, автори , жанри).
+// стоврити масив книжок (назва, кількість сторінок, автори , жанри).
+// -знайти наібльшу книжку.
+// - знайти книжку/ки з найдовшою назвою
+// - знайти книжку/ки які писали 2 автори
+// - знайти книжку/ки які писав 1 автор
 
 let booksArr = [
     {
         title: 'QWERT',
         page: 333,
-        genre: 'Fantasy',
-        author: 'Kolya'
+        genre: ['Fantasy','Fantasy', 'SCI-FI'],
+        author: ['Kolya','Tamara']
     },
     {
         title: 'QWERTQWT',
         page: 123,
-        genre: ['Fantasy, SCI-FI'],
-        author: ['Kolya,Petya']
+        genre: ['Fantasy', 'SCI-FI'],
+        author: ['Kolya','Petya']
     },
     {
-        title: 'ASD',
+        title: 'ASDQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQQ',
         page: 740,
-        genre: 'Classic',
-        author: ['Yulia,Sveta,Max']
+        genre: ['Classic'],
+        author: ['Yulia','Sveta']
     },
     {
         title: 'QWERTASDQWEEEEEEE',
-        page: 53,
-        genre: 'SCI_FI',
-        author: 'Petya'
+        page: 5333,
+        genre: ['SCI_FI'],
+        author: ['Petya']
     }
 ];
 
@@ -390,31 +395,62 @@ let booksArr = [
 console.log(booksArr);
 console.log('---------------------------------------------');
 
-
-// не зміг зробити !!!!!!!!!!!!!!!!!!!!!!!!!!!!
-
-
-
-
 // // -знайти наібльшу книжку.
-// let maxPage = booksArr[0];
-// for (let book of booksArr) {
-//     if (maxPage > book.page){
-//         maxPage = book.page;
-//     }
-// }
-// console.log(maxPage);
+
+let resultBook = booksArr[0];
+for (let book of booksArr) {
+    if (book.page > resultBook?.page){
+        resultBook = book;
+    }
+}
+console.log(resultBook);
+console.log('-----------------------');
+
 
 // - знайти книжку/ки з найбільшою кількістю жанрів
 
-
+let resultBook1 = booksArr[0];
+for (let book of booksArr) {
+    if (book.genre.length > resultBook1?.genre.length){
+        resultBook1 = book;
+    }
+}
+console.log(resultBook1);
+console.log('------------------');
 
 // - знайти книжку/ки з найдовшою назвою
 
-
+let resultBook2 = booksArr[0];
+for (let book of booksArr) {
+    if (book.title.length > resultBook2?.title.length){
+        resultBook2 = book;
+    }
+}
+console.log(resultBook2);
+console.log('--------------------------');
 
 // - знайти книжку/ки які писали 2 автори
 
+let resultBook3 = [];
+for (let book of booksArr) {
+    if (book.author.length === 2){
+        // resultBook3.push(book);
+        resultBook3[resultBook3.length] = book;
+    }
+}
+console.log(resultBook3);
 
 
 // - знайти книжку/ки які писав 1 автор
+
+let resultBook4 = [];
+for (let book of booksArr) {
+    if (book.author.length === 1){
+        // resultBook3.push(book);
+        resultBook4[resultBook4.length] = book;
+    }
+}
+console.log(resultBook4);
+
+
+
