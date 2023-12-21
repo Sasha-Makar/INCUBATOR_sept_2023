@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cart</title>
+</head>
+<body>
+
+
+<script>
+
+
+  let cart = localStorage.getItem('cart');
+  console.log(JSON.parse(cart));
+  let parseCart = JSON.parse(cart);
+
+  for (const element of parseCart) {
+    let liList = document.createElement('li');
+    liList.innerText = element.title
+    document.body.append(liList)
+  }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>cart demo</title>
+    <style>
+        .foto {
+            width: 100px;
+        }
+        .products button {
+            display: block;
+            width: 100px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="products">
+
+</div>
+
+
+<script>
+
+
+
+
+    let products = [
+        {
+            title: 'milk',
+            price: 30,
+            image: 'https://www.healthyeating.org/images/default-source/home-0.0/nutrition-topics-2.0/milk-dairy/taste-teach_prodcatcard.png?sfvrsn=fb05538d_2'
+        },
+        {
+            title: 'juice',
+            price: 28,
+            image: 'https://img.freepik.com/free-vector/illustration-juce-glass_250435-779.jpg?auto=format&h=200'
+        },
+        {
+            title: 'tomato',
+            price: 45,
+            image: 'https://img.freepik.com/free-vector/set-realistic-full-sliced-tomatoes-vectors_1441-834.jpg?auto=format&h=200'
+        },
+        {
+            title: 'tea',
+            price: 25,
+            image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSonQ8OD5ZbGBe7c9XolRfXgQjvPU5iFvIwOQ&usqp=CAU'
+        }
+    ];
+
+    let productsMainDiv = document.getElementsByClassName('products')[0];
+    for (const product of products) {
+        let productDiv = document.createElement('div');
+        let title = document.createElement('h2');
+        title.innerText = `${product.title} - ${product.price}UAH`
+
+        let image = document.createElement('img');
+        image.src = product.image;
+        image.classList.add('foto');
+
+        let button = document.createElement('button');
+        button.innerText = 'add to card';
+        button.onclick = function () {
+          let cart = JSON.parse(localStorage.getItem('cart')) || [];
+          cart.push(product);
+          localStorage.setItem('cart',JSON.stringify(cart));
+        }
+
+
+        productDiv.append(title,image,button);
+
+        productsMainDiv.appendChild(productDiv);
+    }
+
+
+
+
+
+</script>
+
+</body>
+</html>
