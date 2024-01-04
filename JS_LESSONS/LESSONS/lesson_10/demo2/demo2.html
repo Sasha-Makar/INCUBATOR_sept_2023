@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>demo2</title>
+</head>
+<body>
+
+
+<form name="f2">
+    <input type="text" placeholder="enter name" name="username">
+    <input type="number" placeholder="enter age" name="age">
+    <button type="submit">SAVE</button>
+</form>
+
+
+
+
+<script>
+
+
+    let form = document.forms.f2;
+    // console.log(form);
+
+    let usersStorage = localStorage.getItem('users');
+    let users = JSON.parse(usersStorage) || [];
+
+    form.addEventListener('submit',function (ev) {
+        ev.preventDefault();
+        let name = ev.target.username.value;
+        // let age = ev.target.age.value;
+        let age = this.age.value;
+        let data = {name,age};
+        users.push(data);
+        localStorage.setItem('users', JSON.stringify(users));
+    })
+
+    
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
