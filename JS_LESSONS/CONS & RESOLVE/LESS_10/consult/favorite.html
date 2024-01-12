@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>favorite</title>
+    <style>
+        img {
+            width: 20%;
+        }
+    </style>
+</head>
+<body>
+
+<h2>THIS PAGE FAVORITE ITEM</h2>
+
+
+<script>
+
+
+    let item = JSON.parse(localStorage.getItem('fav'));
+    console.log(item);
+
+    for (const el of item) {
+        let carsDiv = document.createElement('div');
+        carsDiv.innerHTML = `<p>${el.make} - ${el.year}</p>
+        <img src="${el.image}" alt="photo">
+        `
+        document.body.appendChild(carsDiv);
+    }
+
+
+    let clear = document.createElement('button');
+    clear.innerText = 'CLEAR';
+    document.body.appendChild(clear);
+    clear.onclick = function () {
+    localStorage.clear();
+    location.reload();
+    }
+
+</script>
+</body>
+</html>
