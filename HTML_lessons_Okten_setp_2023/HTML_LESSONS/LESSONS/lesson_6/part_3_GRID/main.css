@@ -7,7 +7,7 @@ main {
     grid-template-columns: 10% 80% 10%;
     /*grid-template-rows: 10vh 20vh 30vh;*/
     /*grid-template-rows: 1fr 1fr 1fr;*/
-    /*grid-template-rows: repeat(3,1fr);*/
+    /*grid-template-rows: Repeat_2(3,1fr);*/
     grid-template-rows: 1fr 4fr 1fr;
 }
 main>div:nth-child(3){
