@@ -178,8 +178,7 @@ console.log('-------');
 
 let swap = (arr,index1,index2) => {
     let version1 = arr[index1];
-    let version2 = arr[index2];
-    arr[index1] = version2;
+    arr[index1] = arr[index2];
     arr[index2] = version1;
     console.log(arr);
 }
