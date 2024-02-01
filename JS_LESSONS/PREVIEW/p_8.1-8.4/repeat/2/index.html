@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>2</title>
+</head>
+<body>
+
+
+<script>
+    // console.log(22);
+    //prototype call apply bind
+    console.log('======prototype call apply bind=======');
+
+    function User(name,age) {
+        this.name=name;
+        this.age=age;
+        this.greeting= function () {
+            console.log(`hi my name is ${this.name}`);
+        }
+    }
+
+    let user = new User('kokos', 33);
+    console.log(user);
+    user.greeting();
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+
+    // console.log('qweeeeww');
+    //
+    //
+    // let user1 = new User('vasya', 31);
+    // console.log(user1);
+    //
+    // user1.status = false;
+    // console.log(user1);
+    //
+    // let user2 = new User('petya', 55);
+    // console.log(user2);
+
+
+    // User.prototype.status = false;
+    // let user1 = new User('asd', 21);
+    // console.log(user1);
+    // console.log(user1.status);
+    //
+    //
+    // console.log(User);
+    //
+    // User.prototype.greeting2 = function () {
+    //     console.log(`aloha,my age is ${this.age}`);
+    // }
+    //
+    // let user2 = new User('asd', 77);
+    // console.log(user2);
+    // user2.greeting2();
+
+
+    let user1 = new User('qwe', 77);
+    console.log(user1);
+    user1.greeting2 = function () {
+        return`aloha,my age is ${this.age}`;
+    }
+
+    console.log(user1);
+    user1.greeting();
+    console.log(user1.greeting2());
+
+
+    let user2 = new User('qweertty', 78787878787);
+    console.log(user2);
+    user2.greeting();
+    // console.log(user2.greeting2());
+    console.log(user1.greeting2.apply(user2));
+    user2.greeting2()
+</script>
+
+
+
+
+
+</body>
+</html>
