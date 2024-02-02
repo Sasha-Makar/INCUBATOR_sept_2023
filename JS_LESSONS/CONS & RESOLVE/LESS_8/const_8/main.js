@@ -137,3 +137,120 @@ console.log('=======');
 
 
 console.log('======================================================================');
+
+
+function UserFather(name, age) {
+    this.name = name;
+    this.age = age;
+
+    this.function = function () {
+        console.log('---INFO--- ' + this.age);
+    }
+}
+
+let father = new UserFather('Vasia');
+console.log(father);
+let arr = [];
+arr.push(
+    new UserFather('asia', 77),
+    new UserFather('Via', 44),
+    new UserFather('Va', 55),
+    new UserFather('asd', 33)
+)
+
+console.log(arr);
+
+arr[1].function();
+arr[2].function();
+arr[0].function();
+
+
+console.log('==============');
+
+function Coffee(power) {
+    this.power = power;
+    this.water = 0;
+    this.admin = 'John';
+    this.phone= '+38955555554485127'
+
+    this.getWater = function () {
+        if (this.water <= 100) {
+            console.log('WARNING!!! В автоматі мало води' + this.water + ' ml');
+        } else {
+            console.log('В автоматі залишилось ' + this.water + 'ml води');
+        }
+    }
+
+    this.setWater = function (adminName, value) {
+        if (adminName === 'John') {
+            this.water += value;
+            console.log('Вода додана!!! : ', this.water, 'ml');
+        } else {
+            console.log('Ти Не АДМІН!!!');
+        }
+    }
+    this.coffeeRun = function () {
+        if (this.water) {
+            this.water -= 100;
+            console.log("Ваша кава готова.Смачного!!!");
+        } else {
+            console.log(`Вибачте! Не має води. Дзвоніть адміну ${this.admin}`);
+        }
+    }
+
+    this.info = function () {
+        console.log('*****************INFO****************');
+        console.log(`WATER : ${this.water}, ADMIN : ${this.admin}, POWER : ${this.power}`);
+        console.log('*****************INFO****************');
+        for (const key in this) {
+            if (typeof this[key] === 'function') continue;
+            console.log(`${key}: ${this[key]}`);
+            // console.log(this);
+        }
+    }
+}
+
+
+let latte = new Coffee(1000);
+
+console.log(latte);
+//
+// latte.getWater();
+//
+// latte.setWater('John', 500);
+// latte.setWater('Jhn', 500);
+// latte.getWater();
+
+latte.coffeeRun();
+latte.getWater();
+// latte.coffeeRun();
+// latte.coffeeRun();
+// latte.coffeeRun();
+//
+// latte.getWater();
+// latte.coffeeRun();
+// latte.getWater();
+//
+//
+// latte.coffeeRun();
+// latte.getWater();
+// latte.coffeeRun();
+// latte.coffeeRun();
+// latte.coffeeRun();
+// latte.coffeeRun();
+// latte.coffeeRun();
+// latte.coffeeRun();
+latte.setWater('John', 1500);
+latte.getWater()
+
+
+latte.coffeeRun();
+latte.coffeeRun();
+latte.coffeeRun();
+latte.coffeeRun();
+latte.coffeeRun();
+latte.coffeeRun();
+
+latte.getWater();
+
+latte.info();
