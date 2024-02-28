@@ -1,0 +1,10 @@
+.wrap {
+    background: azure;
+    width: 200px;
+    height: 100px;
+    color: rebeccapurple;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
